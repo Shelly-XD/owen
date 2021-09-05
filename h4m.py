@@ -60,7 +60,16 @@ def random_ipv6():
 	return ipaddress.IPv6Address._string_from_ip_int(random.randint(0, MAX_IPV6))
 
 def logo():
-	print("""     
+	print("""  
+\033[1;95m \033[1;95m \033[1;95m \033[1;95m \033[1;95m                                                  
+\033[1;95m______ __        _____          ______  _____ 
+\033[1;95m___  //_/_______ ___(_)_______ ____  /_ __  /_
+\033[1;95m__  ,<   __  __ \__  / __  __ `/__  __ \_  __/
+\033[1;95m_  /| |  _  / / /_  /  _  /_/ / _  / / // /_  
+\033[1;95m/_/ |_|  /_/ /_/ /_/   _\__, /  /_/ /_/ \__/  
+\033[1;95m                  /____/
+\033[1;95m \033[1;95m \033[1;95m \033[1;95m \033[1;95m
+            
 """"")
 id = []
 cp = []
@@ -103,9 +112,9 @@ def masuk():
 	except (KeyError,IOError):
 		os.system('clear')
 		logo()
-		print("\033[0;95m Gada Token? Ketik '\033[0;92mxyz\033[0;95m' Untuk Mendapatkan Token Gratis.")
+		print("\033[0;95m Gada Token? Ketik '\033[0;92mY\033[0;95m' Untuk Mendapatkan Token Gratis.")
 		token = raw_input(" masukin token nya ngap : ")
-		if token == "xyz":
+		if token == "Y":
 			os.system("xdg-open  https://free.facebook.com/100039043908204/posts/546513286660130/?app=fbl")
 			exit(" ! Jangan Lupa React Love wak:v")
 		try:
