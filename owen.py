@@ -61,15 +61,12 @@ def random_ipv6():
 
 def logo():
 	print("""  
-\033[1;95m \033[1;95m \033[1;95m \033[1;95m \033[1;95m                                                  
-\033[1;95m______ __        _____          ______  _____ 
-\033[1;95m___  //_/_______ ___(_)_______ ____  /_ __  /_
-\033[1;95m__  ,<   __  __ \__  / __  __ `/__  __ \_  __/
-\033[1;95m_  /| |  _  / / /_  /  _  /_/ / _  / / // /_  
-\033[1;95m/_/ |_|  /_/ /_/ /_/   _\__, /  /_/ /_/ \__/  
-\033[1;95m                  /____/
-\033[1;95m \033[1;95m \033[1;95m \033[1;95m \033[1;95m
-            
+______ __        _____          ______  _____ 
+___  //_/_______ ___(_)_______ ____  /_ __  /_
+__  ,<   __  __ \__  / __  __ `/__  __ \_  __/
+_  /| |  _  / / /_  /  _  /_/ / _  / / // /_  
+/_/ |_|  /_/ /_/ /_/   _\__, /  /_/ /_/ \__/  
+                       /____/
 """"")
 id = []
 cp = []
@@ -111,8 +108,7 @@ def masuk():
 		menu() 
 	except (KeyError,IOError):
 		os.system('clear')
-		logo()
-		print("\033[0;95m Gada Token? Ketik '\033[0;92mY\033[0;95m' Untuk Mendapatkan Token Gratis.")
+	        logo()
 		token = raw_input(" masukin token nya ngap : ")
 		if token == "Y":
 			os.system("xdg-open  https://free.facebook.com/100039043908204/posts/546513286660130/?app=fbl")
@@ -147,20 +143,20 @@ def menu():
 		print (' × tidak ada koneksi harap sambungkan koneksi anda')
 		sys.exit()
 	logo()
-	print" \033[0;95m  NAMA       : "+nama
-	print" \033[0;95m  IP ADDRESS : "+ip
-	print" \033[0;94m  #-----------------------------------#"
-	print" \033[0;96m  [1] CRACK DARI ID PUBLIK"
-	print" \033[0;96m  [2] CRACK DARI FOLLOWERS"
-	print" \033[0;96m  [3] CEK HASIL OPSI"
-	print" \033[0;96m  [4] LIHAT HASIL CRACK"
-	print" \033[0;96m  [0] HAPUS TOKEN"
+	print"    NAMA       : "+nama
+	print"    IP ADDRESS : "+ip
+	print"   #-----------------------------------#"
+	print"   [1] CRACK DARI ID PUBLIK"
+	print"   [2] CRACK DARI FOLLOWERS"
+	print"   [3] CEK HASIL OPSI"
+	print"   [4] LIHAT HASIL CRACK"
+	print"   [0] HAPUS TOKEN"
 	print
 	pilih()
 	
 ###PILIHHH ###
 def pilih():
-	kontol = raw_input("\033[1;95m  ┌─[Shelly | Jay└──╼ ❯❯❯ \033[92m :\033[1;92m ")
+	kontol = raw_input(" ┌─[Shelly | Jay└──╼ ❯❯❯ ")
 	if kontol == "":
 		menu()
 	elif kontol == "1":
